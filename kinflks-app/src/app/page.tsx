@@ -1,9 +1,14 @@
-import Nav from '@/app/Components/Nav'
+import Image from "next/image";
+import backgroundImage1 from '../../public/Images/gettyimages1.jpeg'
 
-export default function App() {
+export default function Home() {
   return (
-    <div>
-     <Nav/>
-    </div>
+    <main className="home">
+      <div className="container">
+        <div className="">
+          <Image className="bg-hero-pattern h-64 bg-cover bg-center" src={backgroundImage1} alt="back ground image1"></Image>
+        </div>
+      </div>
+    </main>
   );
 }
