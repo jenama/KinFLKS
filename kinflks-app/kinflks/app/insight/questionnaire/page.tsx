@@ -15,15 +15,11 @@ const QuestionPage : FC <props> = ({  }) => {
   const [next, setNext]  = useState(false)
   const [currentStep, setCurrentStep] = useState(0)
   
-  console.log('hs', hairAndScalpData)
   const handleClick = (e:any) => {
    setSelectedAnswer(true)
-   console.log('selected', selectedAnswer)
-    console.log('click')
   }
   const handleChange = (e:any) => {
     setSelectOption(e.target.value)
-    console.log('choice', e.target.value)
   }
   useEffect(() => {
     const getQuestion = (hairAndScalpData:any) => {
@@ -48,10 +44,8 @@ const QuestionPage : FC <props> = ({  }) => {
       setCurrentStep(currentStep - 1)
     }
   }
-
-
+  
   const currentQuestion = hairAndScalpData[currentStep]
-  console.log('curr', currentQuestion)
   return (
     <div>
       <form onSubmit={handleSubmit}>
