@@ -8,7 +8,7 @@ import Head from 'next/head';
 
 export default function Home() {
     return (
-        <div>
+        <div className="" >
             <Head>
                 <title>Your Website | Home</title>
                 <link rel="icon" href="/favicon.ico" />
@@ -17,7 +17,7 @@ export default function Home() {
                 <div className="container mx-auto px-4">
                     <h1 className="text-4xl font-bold text-white mb-4">Welcome to Kinflks</h1>
                     <p className="text-lg text-white mb-8">Where you get advice for your type 3 or 4 hair.</p>
-                    <a href="/ask-the-professionals" className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-full inline-block">Get Started</a>
+                    <a href="/insight" className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-full inline-block">Get Started</a>
                 </div>
             </section>
 
