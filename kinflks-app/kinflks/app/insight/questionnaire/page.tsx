@@ -45,11 +45,6 @@ const QuestionPage : FC <props> = ({  }) => {
     }
   }
 
-  // const currentQuestion = formData[currentCategoryIndex].questions.map((question:any) => {
-  //   console.log('ques', question)
-  //   return question
-  // })
-  // console.log('currQ', currentQuestion)
   return (
     <div>
       <form onSubmit={handleSubmit}>
