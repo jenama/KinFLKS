@@ -1,8 +1,8 @@
 import Image from "next/image";
-import backgroundImage2 from '../public/Images/gettyimages2.jpeg';
-import backgroundImage3 from '../public/Images/gettyimages3.jpeg';
-import backgroundImage4 from '../public/Images/gettyimages4.jpeg';
 
+import black4B from '../public/Images/black4bhair.jpeg';
+import black4C from '../public/Images/black4chair.jpeg';
+import afro from '../public/Images/ afrohair.jpeg'
 
 import Head from 'next/head';
 
@@ -28,15 +28,15 @@ export default function Home() {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" >
                         <div className="bg-white rounded-lg shadow p-6">
                             <h3 className="text-xl font-semibold mb-2">Service 1</h3>
-                            <Image className="text-gray-600" src={backgroundImage2} alt="back ground image2"></Image>
+                            <Image className="text-gray-600 h-100%" src={black4B} alt="back ground image2"></Image>
                         </div>
                         <div className="bg-white rounded-lg shadow p-6">
                             <h3 className="text-xl font-semibold mb-2">Service 2</h3>
-                            <Image className="text-gray-600" src={backgroundImage3} alt="back ground image3"></Image>
+                            <Image className="text-gray-600 h-100%" src={black4C} alt="back ground image3"></Image>
                         </div>
                         <div className="bg-white rounded-lg shadow p-6">
                             <h3 className="text-xl font-semibold mb-2">Service 3</h3>
-                            <Image className="text-gray-600 h-100%" src={backgroundImage4} alt="back ground image4"></Image>
+                            <Image className="text-gray-600 h-100%" src={afro} alt="back ground image4"></Image>
                         </div>
                         {/* Add more services */}
                     </div>
