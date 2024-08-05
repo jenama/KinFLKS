@@ -10,13 +10,6 @@ const Questionnaire: React.FC = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [answers, setAnswers] = useState<any>({});
 
-  // const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-  //   setAnswers({
-  //     ...answers,
-  //     [`${currentCategoryIndex}-${currentQuestionIndex}`]: e.target.value,
-  //   });
-  // };
-
   const nextQuestion = () => {
     if (currentQuestionIndex < questions[currentCategoryIndex].questions.length - 1) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
